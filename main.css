@@ -1,0 +1,70 @@
+:root {
+    --primary: #137a42;
+    --white: #fbf8f2;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    line-height: 1.5em;
+    background-color: var(--white);
+    margin-top: 4em;
+    display: flex;
+}
+
+header,
+main,
+footer {
+    width: 60ch;
+    margin-right: auto;
+    padding-right: 4ch;
+}
+
+aside {
+    width: 40ch;
+    margin-left: auto;
+    padding-left: 4ch;
+    margin-right: 4ch;
+    text-align: right;
+    font-size: large;
+
+    ul {
+        list-style-type: none;
+    }
+}
+
+address {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+img {
+    display: block;
+    width: 100%;
+    border-radius: 1%;
+
+    +cite {
+        display: block;
+        font-size: small;
+        text-align: right;
+        font-style: normal;
+        margin-top: 0.5em;
+    }
+}
+
+ul {
+    line-height: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary);
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+address {
+    font-style: normal;
+}
