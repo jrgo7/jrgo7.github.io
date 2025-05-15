@@ -1,6 +1,7 @@
 :root {
     --primary: #137a42;
     --white: #fbf8f2;
+    --black: #0b1215;
     --main-screen-width: 60ch;
     --aside-screen-width: 40ch;
     --1-col-fullscreen-width: calc(100vw - 2ch);
@@ -11,6 +12,7 @@ body {
     font-optical-sizing: auto;
     line-height: 1.5em;
     background-color: var(--white);
+    color: var(--black);
     margin-top: 4em;
     display: flex;
 }
@@ -21,6 +23,12 @@ footer {
     width: var(--main-screen-width);
     margin-right: auto;
     padding-right: 4ch;
+
+    p {
+        line-height: 2em;
+        text-indent: 4ch;
+        text-align: justify;
+    }
 }
 
 aside {
@@ -35,6 +43,11 @@ aside {
         list-style-type: none;
         padding-left: 0;
     }
+}
+
+h1 {
+    margin-block: 0.67em;
+    font-size: 2em;
 }
 
 address {
@@ -75,6 +88,13 @@ a {
 
 address {
     font-style: normal;
+}
+
+menu {
+    font-size: x-large;
+    padding-left: 0;
+    margin: 0;
+    margin-top: 0.2em;
 }
 
 @media screen and (max-width: 100ch) {
