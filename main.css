@@ -1,6 +1,9 @@
 :root {
     --primary: #137a42;
     --white: #fbf8f2;
+    --main-screen-width: 60ch;
+    --aside-screen-width: 40ch;
+    --1-col-fullscreen-width: calc(100vw - 2ch);
 }
 
 body {
@@ -15,13 +18,13 @@ body {
 header,
 main,
 footer {
-    width: 60ch;
+    width: var(--main-screen-width);
     margin-right: auto;
     padding-right: 4ch;
 }
 
 aside {
-    width: 40ch;
+    width: var(--aside-screen-width);
     margin-left: auto;
     padding-left: 4ch;
     margin-right: 4ch;
@@ -30,6 +33,7 @@ aside {
 
     ul {
         list-style-type: none;
+        padding-left: 0;
     }
 }
 
@@ -40,7 +44,7 @@ address {
 
 img {
     display: block;
-    width: 100%;
+    max-width: 100%;
     border-radius: 1%;
 
     +cite {
@@ -63,8 +67,35 @@ a {
     &:hover {
         text-decoration: underline;
     }
+
+    &.nav-selected {
+        font-weight: bold;
+    }
 }
 
 address {
     font-style: normal;
+}
+
+@media screen and (max-width: 100ch) {
+    body {
+        max-width: var(--main-screen-width);
+        display: inline;
+        padding: 2ch;
+    }
+
+    header,
+    main,
+    footer {
+        margin: auto;
+        width: var(--1-col-fullscreen-width);
+        padding-right: 0;
+    }
+
+    aside {
+        width: var(--1-col-fullscreen-width);
+        padding-left: 0;
+        margin: auto;
+        text-align: center;
+    }
 }
