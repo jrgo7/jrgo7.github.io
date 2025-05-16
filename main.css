@@ -69,6 +69,11 @@ img {
     }
 }
 
+embed[type="application/pdf"] {
+    width: 100%;
+    aspect-ratio: 1/1.294;
+}
+
 ul {
     line-height: 2em;
 }
