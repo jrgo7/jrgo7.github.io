@@ -7,21 +7,17 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
-
-    <!-- For local development -->
-    <!-- <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.css"> -->
-
+    <link rel="stylesheet" href="assets/main.css">
+    <script defer src="assets/main.js" crossorigin="anonymous"></script>
     <script defer src="https://kit.fontawesome.com/ba348d67b5.js" crossorigin="anonymous"></script>
     <title>Justin Rainier Go</title>
 </head>
-
 
 <body>
     <aside>
         <hgroup class="hero">
             <p>Hello, world! I'm</p>
-            <h1><a href="index.html">Justin Rainier Go</a></h1>
+            <h1><a onclick="setLayout('index')">Justin Rainier Go</a></h1>
             <p>BS Computer Science - Software Technology</p>
             <p><a href="https://www.dlsu.edu.ph/" target="_blank">De La Salle University</a></p>
         </hgroup>
@@ -41,33 +37,15 @@
         </address>
         <nav>
             <ul>
-                <li><a href="certifications.html">Certifications</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="resume.html">Resume</a></li>
+                <li><a id="resume" onclick="setLayout('resume')">Resume</a></li>
+                <li><a id="projects" onclick="setLayout('projects')">Projects</a></li>
+                <li><a id="certifications" onclick="setLayout('certifications')">Certifications</a></li>
+                <li><a id="publications" onclick="setLayout('publications')">Publications</a></li>
             </ul>
         </nav>
     </aside>
-    <main>
-        <img src="hero.jpg">
-        <cite>📸 Jessareé Lim / 2023</cite>
-        <p>
-            Hello, world! I'm Justin Rainier Go, but you may call me Justin. I'd describe myself as someone who is
-            logical
-            and meticulous, as a computer scientist like me should be
-            when creating efficient and effective software solutions. Thus, I sometimes spend a lot of time
-            ensuring the correctness of whatever I write, be it a piece of code or this little writeup.
-        </p>
-        <h2>Interests</h2>
-        <ul>
-            <li>natural language processing</li>
-            <li>accessibility</li>
-            <li>learning Japanese</li>
-        </ul>
-        <h2>Hobbies</h2>
-        <ul>
-            <li>retro video games</li>
-            <li>slice-of-life anime and manga</li>
-        </ul>
+    <main hidden>
+
     </main>
 </body>
 
