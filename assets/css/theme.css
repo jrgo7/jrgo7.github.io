@@ -1,0 +1,16 @@
+:root {
+    --background: hsl(44, 58%, 92%);
+    --background2: hsl(44, 38%, 95%);
+    --text: hsl(203, 15%, 21%);
+    --primary: hsl(160, 28%, 40%);
+    --secondary: hsl(30, 28%, 34%);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text: #FBF8F0;
+        --background: #2D373D;
+        --primary: hsl(160, 28%, 50%);
+        --secondary: #6C5940;
+    }
+}
