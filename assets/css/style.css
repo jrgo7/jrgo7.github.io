@@ -94,7 +94,7 @@ iframe {
     margin: auto;
     max-height: auto;
     border-radius: 14px;
-    box-shadow: 1px 1px 14px #bbbbbb;
+    box-shadow: 1px 1px 14px var(--background2);
     width: 100%;
 }
 
@@ -110,7 +110,7 @@ cite {
 
 details {
     border-radius: 14px;
-    box-shadow: 1px 1px 14px #bbbbbb;
+    box-shadow: 1px 1px 14px var(--background2);
     padding: 0 1rem;
     background: var(--background2);
     margin-bottom: 1rem;
