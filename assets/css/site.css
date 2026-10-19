@@ -22,7 +22,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
+  :root {
     --paper: #14181c;
     --ink: #e4e8ec;
     --muted: #9aa5b0;
@@ -31,16 +31,6 @@
     --wash: #1c2228;
     color-scheme: dark;
   }
-}
-
-:root[data-theme="dark"] {
-  --paper: #14181c;
-  --ink: #e4e8ec;
-  --muted: #9aa5b0;
-  --accent: #8db6e0;
-  --rule: #2c353d;
-  --wash: #1c2228;
-  color-scheme: dark;
 }
 
 /* Base -------------------------------------------------------------------- */
@@ -203,23 +193,6 @@ p {
   box-shadow: inset 2px 0 0 var(--accent);
   padding-left: 0.75rem;
   margin-left: -0.75rem;
-}
-
-.theme-toggle {
-  font: inherit;
-  font-size: 0.95rem;
-  color: var(--muted);
-  background: none;
-  border: 1px solid var(--rule);
-  border-radius: 999px;
-  padding: 0.3rem 0.85rem;
-  cursor: pointer;
-  align-self: flex-start;
-}
-
-.theme-toggle:hover {
-  color: var(--ink);
-  border-color: var(--muted);
 }
 
 main {
