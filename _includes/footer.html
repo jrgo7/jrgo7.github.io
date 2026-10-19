@@ -1,0 +1,8 @@
+<footer class="site-footer">
+  <p>© {{ site.data.site.copyright_year }} {{ site.title }}. All rights reserved.</p>
+  <ul>
+    {% for link in site.data.site.links %}
+    <li><a href="{{ link.url }}"{% if link.rel %} rel="{{ link.rel }}"{% endif %}>{{ link.title }}</a></li>
+    {% endfor %}
+  </ul>
+</footer>

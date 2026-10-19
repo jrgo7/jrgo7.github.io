@@ -1,0 +1,46 @@
+---
+layout: default
+title: Publications
+description: Publications, essays, and talks by Justin Rainier Go, including apparent age estimation and empathic programming environments.
+---
+<h1>Publications</h1>
+<p class="lede">
+  Research papers and essays, followed by talks I've given.
+</p>
+
+<ul class="ledger">
+  {% for pub in site.data.publications %}
+  <li>
+    <time datetime="{{ pub.year }}">{{ pub.year }}</time>
+    <div>
+      <p class="title"><a href="{{ pub.url }}">{{ pub.title }}</a></p>
+      <p class="venue">{{ pub.venue }}</p>
+      {% for paragraph in pub.description %}
+      <p>{{ paragraph }}</p>
+      {% endfor %}
+      {% if pub.links %}
+      <ul class="links">
+        {% for link in pub.links %}
+        <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+
+<h2>Talks</h2>
+
+{% for talk in site.data.talks %}
+<figure>
+  <img
+    src="{{ talk.image | relative_url }}"
+    width="{{ talk.width }}"
+    height="{{ talk.height }}"
+    loading="lazy"
+    alt="{{ talk.alt }}"
+  />
+  <figcaption>{{ talk.caption }}</figcaption>
+</figure>
+{% endfor %}

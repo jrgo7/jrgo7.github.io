@@ -1,0 +1,58 @@
+---
+layout: default
+title: Projects
+description: Course projects and personal builds by Justin Rainier Go, including a Pokémon data analysis, a game review site, and a music database.
+---
+<h1>Projects</h1>
+<p class="lede">
+  Most of these began as coursework at De La Salle University, while some are
+  Harvard CS50 projects. Open an entry to read more, watch a demo, or go
+  to the repository.
+</p>
+
+<div class="work">
+  {% for project in site.data.projects %}
+  <details>
+    <summary><h2>{{ project.title }}</h2></summary>
+
+    {% for paragraph in project.description %}
+    <p>{{ paragraph }}</p>
+    {% endfor %}
+
+    {% if project.image %}
+    <figure>
+      <img
+        src="{{ project.image.src | relative_url }}"
+        width="{{ project.image.width }}"
+        height="{{ project.image.height }}"
+        loading="lazy"
+        alt="{{ project.image.alt }}"
+      />
+    </figure>
+    {% endif %}
+
+    {% if project.video %}
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube-nocookie.com/embed/{{ project.video.id }}"
+      title="{{ project.video.title }}"
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+    {% endif %}
+
+    <ul class="links">
+      {% if project.links %}
+        {% for link in project.links %}
+        <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+        {% endfor %}
+      {% else %}
+      <li><a href="{{ project.repo }}">Repository on GitHub</a></li>
+      {% endif %}
+    </ul>
+  </details>
+  {% endfor %}
+</div>

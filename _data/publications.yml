@@ -1,0 +1,29 @@
+# Newest first. Rendered as the ledger on the Publications page.
+
+- year: 2026
+  title: "Apparent Age Estimation: Challenges and Outcomes"
+  url: https://arxiv.org/abs/2604.03335v1
+  venue: "Philippine Computing Society Congress 2026"
+  description:
+    - "A data science project on apparent age estimation. We looked at the IMDB-WIKI dataset, the largest dataset for apparent age estimation, and the Deep EXpectation (DEX) method, which fine-tunes a VGG-16 model for the task."
+    - "After replicating the original model, we tried to improve it by fine-tuning on combinations of other apparent age datasets, including ChaLearn LAP, APPA-REAL, and FairFace. We also replaced the cross-entropy loss with mean-variance loss and adaptive mean-residue loss."
+  links:
+    - title: "Demo on GitLab"
+      url: https://gitlab.com/data100-s12-group7/demo
+    - title: "Project group on GitLab"
+      url: https://gitlab.com/data100-s12-group7
+
+- year: 2026
+  title: "Towards More Empathic Programming Environments: An Experimental Empathic AI-Enhanced IDE"
+  url: https://arxiv.org/abs/2604.19142
+  venue: "Philippine Computing Society Congress 2026"
+  description:
+    - "Ceci, a Caring Empathic C IDE for novice programmers, which prioritizes learning and emotional support over direct code generation."
+    - "We ran a comparative pilot with eleven participants against a control of VS Code with ChatGPT, measuring workload with NASA-TLX and perceptions with a post-test usability survey. There was no significant difference in perceived effectiveness, learning, or workload, though Ceci users reported significantly greater perceived helpfulness in error correction (p = 0.0220). Empathic responses on their own may not be enough to improve learning outcomes or reduce workload."
+
+- year: 2022
+  title: "So Near, Yet So Far: How Violence Against Women Blocks the Philippines from True Gender Equality"
+  url: https://www.globalwe-essays.org/winning-essays/2022/6/9/so-near-yet-so-far-how-violence-against-women-blocks-the-philippines-from-true-gender-equality-by-justin-rainier-go
+  venue: "Harvard Alumni for Global Women's Empowerment, winning essay"
+  description:
+    - "An essay I wrote while still a student at Saint Jude Catholic School, which won the Harvard Alumni for Global Women's Empowerment essay contest. It argues that the Philippines ranks as Asia's best at closing the gender gap, yet violence against women remains common. Just as colonial powers imposed their rule, they also imposed societal norms that overwrote the country's feminist precolonial past."

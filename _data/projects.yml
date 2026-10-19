@@ -1,0 +1,111 @@
+# Newest first. Each entry renders as one expandable item on the Projects page.
+# Optional keys: image (src, width, height, alt), video (id, title), and links
+# (a list of title/url pairs, which replaces the default single repo link).
+
+- title: "AnimoRank and CLive"
+  description:
+    - "A HackerRank-style automated assessment tool built for CCPROG1, DLSU's introductory C programming course, and the platform my group's undergraduate thesis is built on."
+    - "My part is CLive, which scaffolds students through the PCDIT framework of Kurniawan et al., taking a novice from problem definition and concrete cases through algorithm design, implementation, and testing before syntax becomes the focus. The question is behavioral: does stage-aware guidance change how a student approaches a problem, compared with unstructured hints or direct answers? Prototype testing is underway, and the experimental study runs in November 2026."
+  image:
+    src: assets/img/animorank.webp
+    width: 1600
+    height: 900
+    alt: "The AnimoRank home page, with a graph of programming topics such as variables, functions, and format specifiers, and a Start practicing button."
+  links:
+    - title: "animorank.com"
+      url: https://animorank.com
+    - title: "Repository on GitHub"
+      url: https://github.com/iwillreku3206/animorank
+
+- title: "PCDIT Tutor"
+  description:
+    - "An AI facilitator that guides a solo novice programmer through the PCDIT problem-solving framework, built as my group's capstone project for STSP001. It draws the student's own reasoning out through phase-gated coaching and never hands over a solution."
+    - "The system implements the Plan, Concrete cases, and Design phases. Implement and Test are descoped to future work, so the tutor stops at a design and does not run or judge code. Together with Ceci, it is a precursor to my thesis."
+  repo: https://github.com/jrgo7/stsp001-group6-capstone
+
+- title: "Flood Risk-Infrastructure Dashboard"
+  description:
+    - "An interactive dashboard that shows how well flood control infrastructure in the Philippines lines up with actual flood risk. It joins DPWH flood control project records with NOAH five-year flood risk shapefiles, province by province, and is built with Flask."
+    - "Made for DATA101."
+  image:
+    src: assets/img/flood-control-dashboard.webp
+    width: 1600
+    height: 900
+    alt: "The flood control dashboard, with project markers on a map of the Manila Bay area and a project panel on the right."
+  links:
+    - title: "Live dashboard"
+      url: https://flood-control-dashboard.vercel.app
+    - title: "Repository on GitHub"
+      url: https://github.com/jrgo7/flood-control-dashboard
+
+- title: "Wiki-SEA-Face: Biological Gender Classification"
+  description:
+    - "A study of whether machine learning models can predict biological gender from facial images of people of Southeast Asian descent, using a dataset of our own curated from Wikidata. We compared classical models (k-nearest neighbors and logistic regression) against convolutional neural networks built with transfer learning on VGG19, ResNet152, and Inception ResNet V1."
+    - "The best result came from Inception ResNet V1 on the original, unmodified images with its last layer unfrozen, at about 96.17% validation accuracy. Grad-CAM saliency maps show where the model looks when it makes a prediction. Made for STINTSY, a course at DLSU."
+  image:
+    src: assets/img/stintsy-wikidata-poster.webp
+    width: 1920
+    height: 1440
+    alt: "The Wiki-SEA-Face research poster, with sections on the dataset, preprocessing, models, results, and saliency maps."
+  repo: https://github.com/jrgo7/stintsy-wikidata
+
+- title: "Ceci: A Caring C Empathic IDE"
+  description:
+    - "The IDE behind Ceci, an experimental empathic IDE for novice programmers that prioritizes learning and emotional support over direct code generation. It was built as part of an empathic and affective computing research project."
+    - "The companion repository holds the exploratory data analysis and statistical tests on the study's results."
+  image:
+    src: assets/img/ceci.webp
+    width: 1920
+    height: 1080
+    alt: "The Ceci IDE, with a chat panel with the tutoring bot on the left, an empty code editor in the center, and the arguments, input, and output panels on the right."
+  links:
+    - title: "Repository on GitHub"
+      url: https://github.com/jrgo7/empathic-ide
+    - title: "Analysis on GitHub"
+      url: https://github.com/jrgo7/eda-empathic-ide
+
+- title: "An Analysis on Competitive Pokémon Teams"
+  description:
+    - "A complete data science project on Pokémon Showdown. It covers data wrangling, exploratory analysis, data mining, and statistical inference, aimed at finding patterns in team building, metagame trends, and strategy in Gen 5 OU match data."
+    - "Teams tend to be built around controlling the weather, at every skill level measured by ELO. The metagame still changes over time, even in an older generation of games. Made for CSMODEL, a data science course at DLSU."
+  image:
+    src: assets/img/pokemon.webp
+    width: 1400
+    height: 990
+    alt: "A poster showing the results of the Pokémon team analysis."
+  repo: https://github.com/jrgo7/csmodel-mco
+
+- title: "FrogCritic"
+  description:
+    - "A full-stack video game review site, submitted for CCAPDEV, a web development course at DLSU. The frontend uses Bootstrap. The backend is written in Express and connects to a Supabase instance."
+  image:
+    src: assets/img/frogcritic.webp
+    width: 1200
+    height: 551
+    alt: "The FrogCritic web application, showing video game reviews."
+  repo: https://github.com/jrgo7/ccapdev-mco
+
+- title: "A Video Game Music Database"
+  description:
+    - "A database initialization script with schemas and functions for a video game music database. It was my final project for CS50 SQL, a Harvard course on databases."
+  video:
+    id: fytROeUQdBM
+    title: "Demo of the video game music database"
+  repo: https://github.com/jrgo7/vgm-db
+
+- title: "Simple Start Page Maker"
+  description:
+    - "A Python Tkinter app that takes a list of bookmarks and outputs an HTML start page. I submitted it as my final project for CS50x, Harvard University's introduction to computer science and programming."
+  video:
+    id: zLNRZojZTgg
+    title: "Demo of the start page maker"
+  repo: https://github.com/jrgo7/start-page-maker
+
+- title: "Persona 5: Text-Based"
+  description:
+    - "A text game set in the world of Persona 5, made in C for CCPROG1, DLSU's introductory programming course. It was my first major course output, so it holds a special place for me. I had little experience with C at the time, but I had made games on an iPad, a 3DS, and in SmileBASIC."
+    - "It's still one of the largest projects I've written, at about 6,000 lines of freshman code, with all the passion and rookie mistakes included."
+  video:
+    id: sZdtsMIobdY
+    title: "Demo of Persona 5: Text-Based"
+  repo: https://github.com/jrgo7/p5tb-fixed

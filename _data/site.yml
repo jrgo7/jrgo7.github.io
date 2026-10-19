@@ -1,0 +1,26 @@
+# Shared across every page. Edit here, not in the layouts.
+copyright_year: 2026
+email: justin_rainier_go@dlsu.edu.ph
+
+nav:
+  - title: About
+    url: /
+  - title: Projects
+    url: /projects.html
+  - title: Publications
+    url: /publications.html
+  - title: Resume
+    url: /resume.html
+
+links:
+  - title: Email
+    url: mailto:justin_rainier_go@dlsu.edu.ph
+  - title: GitHub
+    url: https://github.com/jrgo7
+    rel: me
+  - title: LinkedIn
+    url: https://www.linkedin.com/in/justin-rainier-go-1788b0217/
+    rel: me
+  - title: YouTube
+    url: https://www.youtube.com/@waflrain/videos
+    rel: me

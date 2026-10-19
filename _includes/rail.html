@@ -1,0 +1,13 @@
+<aside class="rail">
+  <a class="name" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+  <nav aria-label="Main">
+    <ul>
+      {% for item in site.data.site.nav %}
+      <li>
+        <a href="{{ item.url | relative_url }}"{% if item.url == page.url %} aria-current="page"{% endif %}>{{ item.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+  <button class="theme-toggle" type="button" data-theme-toggle>Dark mode</button>
+</aside>

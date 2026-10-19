@@ -1,0 +1,19 @@
+# Rendered as figures under "Talks" on the Publications page, in this order.
+
+- image: assets/img/talk-apparent.webp
+  width: 1280
+  height: 720
+  alt: "Title slide of the talk Apparent Age Estimation: Challenges and Outcomes."
+  caption: "Apparent Age Estimation: Challenges and Outcomes, Philippine Computing Society Congress 2026."
+
+- image: assets/img/talk-empathic.webp
+  width: 1280
+  height: 720
+  alt: "Title slide of the talk on empathic programming environments."
+  caption: "Towards More Empathic Programming Environments, Philippine Computing Society Congress 2026."
+
+- image: assets/img/talk-opinions.webp
+  width: 1280
+  height: 854
+  alt: "Speaker at a session titled The Art of Forming Your Own Opinion."
+  caption: "The Art of Forming Your Own Opinion. Photo by Reese Pabelico, 2026, for The Order of the Quill: Training Young Judenites of Media and Truth."
