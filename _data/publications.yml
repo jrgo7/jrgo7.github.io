@@ -3,7 +3,7 @@
 - year: 2026
   title: "Apparent Age Estimation: Challenges and Outcomes"
   url: https://arxiv.org/abs/2604.03335v1
-  venue: "Philippine Computing Society Congress 2026"
+  venue: "Philippine Computing Science Congress 2026"
   description:
     - "A data science project on apparent age estimation. We looked at the IMDB-WIKI dataset, the largest dataset for apparent age estimation, and the Deep EXpectation (DEX) method, which fine-tunes a VGG-16 model for the task."
     - "After replicating the original model, we tried to improve it by fine-tuning on combinations of other apparent age datasets, including ChaLearn LAP, APPA-REAL, and FairFace. We also replaced the cross-entropy loss with mean-variance loss and adaptive mean-residue loss."
@@ -16,7 +16,7 @@
 - year: 2026
   title: "Towards More Empathic Programming Environments: An Experimental Empathic AI-Enhanced IDE"
   url: https://arxiv.org/abs/2604.19142
-  venue: "Philippine Computing Society Congress 2026"
+  venue: "Philippine Computing Science Congress 2026"
   description:
     - "Ceci, a Caring Empathic C IDE for novice programmers, which prioritizes learning and emotional support over direct code generation."
     - "We ran a comparative pilot with eleven participants against a control of VS Code with ChatGPT, measuring workload with NASA-TLX and perceptions with a post-test usability survey. There was no significant difference in perceived effectiveness, learning, or workload, though Ceci users reported significantly greater perceived helpfulness in error correction (p = 0.0220). Empathic responses on their own may not be enough to improve learning outcomes or reduce workload."
